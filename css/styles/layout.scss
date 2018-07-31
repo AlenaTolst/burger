@@ -1,0 +1,72 @@
+html, body{
+  height: 100%; //100% окна, вспомогательные блоки тоже растягиваем на всю страницу
+}
+
+body{
+  font-size: 16px;
+  font-family: 'ubuntumedium';
+  color: $black;
+  position: relative;
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,h2,h3,h4{
+  margin: 0;
+}
+
+.wrapper{
+  position: relative; //position absolute внути позиционировался относительно враппера
+  width: 100%; 
+  min-width: 940px; //минимальная из макета, ширина контейнера
+  min-height: 100%; //растянут на всю высоту окна
+  overflow: hidden; //нет скрола при избытке содеожимого 
+  font-family: 'ubuntumedium', sans-serif;
+}
+
+.container{
+  margin: 0 auto; //всегда по центру независимо от ширины
+  width: 940px;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container_fullscreen{
+  width: 100%;
+}
+
+.title {
+  font-family: 'gagalinregular';
+  font-size: 72px;
+  color:black;
+  margin-bottom: 45px;
+
+  &_yellow{
+    color:$yellow;
+    margin-bottom:5px;
+  }
+
+  &_center{
+    text-align: center;
+  }
+}
+
+.button{
+  padding: 9px 16px;
+  border-radius: 7px;
+  background: $red;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+

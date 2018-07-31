@@ -1,0 +1,355 @@
+@font-face {
+  font-family: 'gagalinregular';
+  src: url("../../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../../fonts/gagalin-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lifehackmedium';
+  src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntubold';
+  src: url("../../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-b-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntulight';
+  src: url("../../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntumedium';
+  src: url("../../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubunturegular';
+  src: url("../../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  font-family: 'ubuntumedium';
+  color: #2f3234;
+  position: relative;
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+h1, h2, h3, h4 {
+  margin: 0; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 940px;
+  min-height: 100%;
+  overflow: hidden;
+  font-family: 'ubuntumedium', sans-serif; }
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+  min-height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh; }
+
+.container_fullscreen {
+  width: 100%; }
+
+.title {
+  font-family: 'gagalinregular';
+  font-size: 72px;
+  color: black;
+  margin-bottom: 45px; }
+  .title_yellow {
+    color: #f9b43b;
+    margin-bottom: 5px; }
+  .title_center {
+    text-align: center; }
+
+.button {
+  padding: 9px 16px;
+  border-radius: 7px;
+  background: #e35028;
+  color: white;
+  text-decoration: none;
+  text-align: center; }
+
+.section-hero {
+  background: url("../../img/hero/hero-background.jpg") center center no-repeat;
+  background-size: cover; }
+
+.container_hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.header {
+  height: 90px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.nav {
+  margin-right: 20px; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 10px; }
+  .nav__item:first-child::before {
+    display: none; }
+  .nav__item:before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 10px; }
+
+.nav__link {
+  color: white;
+  text-decoration: none; }
+
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 13px; }
+
+.hero__text {
+  margin-left: 12px;
+  padding-top: 80px; }
+
+.hero__main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.hero__text-inside {
+  font-size: 65px;
+  font-family: 'lifehackmedium';
+  color: white;
+  line-height: 70px; }
+
+.scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  height: 55px; }
+
+.section-best {
+  background: url(../../img/best/best.jpg) center center no-repeat;
+  background-size: cover; }
+
+.best__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.best__item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 10px; }
+
+.best__image {
+  margin-bottom: 40px; }
+
+.best__text {
+  text-align: center; }
+
+.best__title {
+  font-size: 24px;
+  font-family: 'lifehackmedium';
+  margin-bottom: 25px; }
+
+.best__inside {
+  font-size: 14px;
+  font-family: 'ubuntulight';
+  color: #636465;
+  line-height: 20px; }
+
+.reviews__list {
+  background: black;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 14px; }
+
+.reviews__item {
+  height: 50%;
+  width: 25%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  .reviews__item:hover .reviews__hover {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+
+.reviews__hover {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(20, 20, 20, .7);
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 100%; }
+
+.reviews__title {
+  font-family: 'gagalinregular'; }
+
+.reviews__text {
+  font-family: 'ubuntulight';
+  line-height: 25px; }
+
+.button_reviews {
+  width: 90px;
+  height: 15px;
+  background: #2f3234;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'ubuntumedium'; }
+
+.sidebar {
+  position: fixed;
+  top: 85px;
+  right: 45px;
+  width: 20px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.sidebar__item {
+  height: 16px;
+  width: 16px; }
+
+.sidebar__link {
+  height: 6px;
+  width: 6px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative; }
+
+.sidebar__link:before {
+  display: block;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.sidebar__link:hover:before {
+  border: 1px solid white; }
+
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main-dist.css.map */

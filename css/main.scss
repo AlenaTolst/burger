@@ -1,0 +1,12 @@
+$black: #2f3234;
+$red: #e35028;
+$yellow: #f9b43b;
+
+@import "./styles/normalize.scss";
+@import "styles/fonts.scss";
+@import "styles/layout.scss";
+
+@import "blocks/hero.scss";
+@import "blocks/best.scss";
+@import "blocks/reviews.scss";
+@import "blocks/sidebar.scss";

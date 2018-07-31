@@ -1,0 +1,57 @@
+.reviews__list{
+  background: black;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.reviews__item{
+  height:50%;
+  width: 25%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &:hover{
+    .reviews__hover {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    }
+  }
+}
+
+.reviews__hover{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(#141414, .7);
+  color: white;
+  opacity: 0;
+  visibility: hidden; //отменяет клик 
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.reviews__title{
+  font-family: 'gagalinregular';
+}
+
+.reviews__text{
+  font-family: 'ubuntulight';
+  line-height: 25px;
+}
+
+.button_reviews{
+  width: 90px;
+  height: 15px;
+  background: #2f3234;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'ubuntumedium';
+}
