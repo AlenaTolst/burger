@@ -17,6 +17,7 @@
 .sidebar__link{
   height: 6px;
   width: 6px;
+  display: block;
   background-color: white;
   border-radius: 50%;
   position: relative;
@@ -35,7 +36,7 @@
   transform: translate(-50%, -50%);
 }
 
-.sidebar__link:hover:before{
+.sidebar__link:hover:before, .sidebar__link_activ:before{
   border: 1px solid white;
 }
 

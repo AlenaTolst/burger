@@ -32,6 +32,7 @@ h1,h2,h3,h4{
 .container{
   margin: 0 auto; //всегда по центру независимо от ширины
   width: 940px;
+  min-width: 320px;
   min-height: 650px;
   display: flex;
   flex-direction: column;
@@ -39,13 +40,10 @@ h1,h2,h3,h4{
   height: 100vh;
 }
 
-.container_fullscreen{
-  width: 100%;
-}
-
 .title {
   font-family: 'gagalinregular';
   font-size: 72px;
+  font-weight: 300;
   color:black;
   margin-bottom: 45px;
 
@@ -66,7 +64,6 @@ h1,h2,h3,h4{
   color: white;
   text-decoration: none;
   text-align: center;
-
 }
 
 
