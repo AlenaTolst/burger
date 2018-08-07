@@ -634,7 +634,7 @@ h1, h2, h3, h4 {
   margin-left: 20px; }
 
 .section-map {
-  background: url("../../img/map/map.jpg") center center no-repeat;
+  background: url("../img/map/map.jpg") center center no-repeat;
   background-size: cover; }
 
 .map {
@@ -737,7 +737,7 @@ h1, h2, h3, h4 {
   margin-left: 0.5rem; }
 
 .section-team {
-  background: url("../../img/team/team-background.jpg") center center no-repeat;
+  background: url("../img/team/team-background.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative; }
