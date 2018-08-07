@@ -3,7 +3,7 @@
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  font-size: 14px;
+  font-size: rem(14px);
   height: 100vh;
 }
 
@@ -21,6 +21,11 @@
     transition: 0.5s;
     }
   }
+
+  @include tablets{
+    height: 25%;
+    width: 50%;
+  }
 }
 
 .reviews__hover{
@@ -32,30 +37,49 @@
   color: white;
   opacity: 0;
   visibility: hidden; //отменяет клик 
-  padding: 0 20px;
+  padding: 0 rem(20px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
+
+  @include phones{
+    align-items: center;
+   }
 }
 
 .reviews__title{
   font-family: 'gagalinregular';
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include phones{
+    font-size: 24px;
+    text-align: center;
+   }
 }
 
 .reviews__text{
   font-family: 'ubuntulight';
-  line-height: 25px;
-  margin-bottom: 20px;
+  line-height: rem(25px);
+  margin-bottom: rem(20px);
+
+  @include phones{
+    display: none;
+   }
 }
 
 .button_reviews{
-  width: 90px;
-  height: 15px;
+  width: 110px;
+  height: 35px;
+  // margin-right: rem(150px);
   background: #2f3234;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: rem(13px);
   font-family: 'ubuntumedium';
   cursor: pointer;
+
+  @include phones{
+    width: 100px;
+    height: 30px;
+   }
 }

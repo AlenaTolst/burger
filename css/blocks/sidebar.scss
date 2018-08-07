@@ -1,22 +1,31 @@
 .sidebar{
   position: fixed;
-  top: 85px;
-  right: 45px;
-  width: 20px;
-  height: 200px;
+  top: rem(85px);
+  right: rem(45px);
+  width: rem(20px);
+  height: rem(200px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+
+  @include tablets{
+    display: none;
+  }
+
+  @include phones{
+    display: none;
+  }
 }
 
 .sidebar__item{
-  height: 16px;
-  width: 16px;
+  height: rem(16px);
+  width: rem(16px);
 }
 
 .sidebar__link{
-  height: 6px;
-  width: 6px;
+  height: rem(6px);
+  width: rem(6px);
   display: block;
   background-color: white;
   border-radius: 50%;
@@ -26,9 +35,9 @@
 .sidebar__link:before{
   display: block;
   content: "";
-  height: 16px;
-  width: 16px;
-  border: 1px solid transparent;
+  height: rem(16px);
+  width: rem(16px);
+  border: rem(1px) solid transparent;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -37,7 +46,7 @@
 }
 
 .sidebar__link:hover:before, .sidebar__link_activ:before{
-  border: 1px solid white;
+  border: rem(1px) solid white;
 }
 
 

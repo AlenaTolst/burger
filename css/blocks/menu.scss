@@ -1,0 +1,120 @@
+.section-menu {
+  background: url("../img/menu/menu-background.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.title_menu {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+
+  @include tablets{
+    display: none;
+  }
+}
+
+.menu-acco {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.menu-acco__item {
+  height: 100%;
+  display: flex;
+
+  .no-active{
+    @include phones{
+      display: none;
+     }
+  }
+}
+
+.menu-acco__trigger {
+  width: rem(80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  box-shadow:0 0 0 128px rgba(0, 0, 0, 0.7) inset;
+
+  @include tablets{
+    width: rem(85px);
+  }
+
+  @include phones{
+    display: none;
+  }
+}
+
+.menu-acco__trigger_right{
+  background-position: center right;
+}
+
+.menu-acco__trigger-text {
+  font-family: 'gagalinregular';
+  font-size: rem(40px);
+  color: white;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.is-active {
+  .menu-acco__trigger-text {
+    color: $yellow;
+  }
+
+  .menu-acco__trigger{
+    @include phones{
+      display: flex;
+      width: 16%;
+      }
+
+  }
+  .menu-acco__content{
+    display: block;
+    width: 540px;
+    background: rgba(47, 50, 52, 0.93);
+    overflow: hidden;
+
+    @include phones{
+      width: 84%;
+    }
+
+  }
+
+  .menu-acco__text{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 60px;
+  }
+}
+
+.menu-acco__content {
+  display: none;
+  color: white;
+  font-family: 'ubuntulight';
+  font-size: rem(14px);
+  line-height: rem(24px);
+  position: relative;
+}
+
+.close-mobile{
+  display: none;
+
+  @include phones{
+    display: block;
+  position: absolute;
+  top: rem(28px);
+  right: rem(20px);
+  }
+
+}

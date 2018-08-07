@@ -1,0 +1,133 @@
+.section-order{
+  background: url("../img/order/order-background.jpg") center center no-repeat;
+  background-size: cover;
+  font-family: 'ubuntulight';
+  font-size: 14px;
+}
+
+.section-form{
+  display: flex;
+  @include tablets{
+   flex-direction: column;
+   padding: 0 rem(125px);
+  }
+
+  @include phones{
+    padding: rem(5px);
+  }
+}
+
+.title_order{
+  margin-bottom: 55px;
+}
+
+.form__item{
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.form__block{
+ flex: 1;
+ margin-left: 20px;
+
+ &:first-child{
+   margin-left: 0;
+ }
+}
+
+.form__block_mobile-no{
+  @include phones{
+    display: none;
+  }
+ }
+
+.form{
+  color: white;
+  flex: 1;
+}
+
+.form_right{
+  margin-left: 20px;
+
+  @include tablets{
+    margin-left: 0;
+  }
+}
+
+.form__item-mobile{
+  @include phones{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form__title{
+  margin-bottom: 10px;
+}
+
+[type="radio"]:checked{
+  width: 16px;
+  height: 15px;
+  -webkit-appearance: none;
+  background-image: url("../img/order/radio.png");
+  outline: none;
+}
+
+.form__checkbox{
+  height: 15px;
+  width: 15px;
+}
+
+[type="checkbox"]:checked{
+  width: 15px;
+  height: 15px;
+  outline:none;
+  -webkit-appearance: none;
+  background-image: url("../img/order/checkbox.png");
+}
+
+.form__input{
+  border:initial;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 5px;
+  width:100%;
+  outline: none;
+}
+
+.form__input:focus{
+  border: 1px solid #f9b43b;
+}
+
+.form__block_radio{
+  flex: none;
+}
+
+.form__block_oneline{
+  display: flex;
+  align-items: center;
+}
+
+.form__input_textarea{
+  height: 110px;
+  resize: none;
+}
+
+.form__text{
+  margin-left: 10px;
+}
+
+.button_form{
+  font-family: 'ubuntubold';
+}
+
+.button-reset{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: 'ubuntulight';
+  color: white;
+  margin-left: 20px;
+}
