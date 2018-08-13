@@ -18,17 +18,21 @@
 }
 
 .title_order{
-  margin-bottom: 55px;
+  margin-bottom: rem(55px);
+
+  @include phones{
+    margin-block-end: rem(30px);
+  }
 }
 
 .form__item{
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
   display: flex;
 }
 
 .form__block{
  flex: 1;
- margin-left: 20px;
+ margin-left: rem(20px);
 
  &:first-child{
    margin-left: 0;
@@ -47,7 +51,7 @@
 }
 
 .form_right{
-  margin-left: 20px;
+  margin-left: rem(20px);
 
   @include tablets{
     margin-left: 0;
@@ -63,35 +67,79 @@
 }
 
 .form__title{
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 }
 
-[type="radio"]:checked{
-  width: 16px;
-  height: 15px;
-  -webkit-appearance: none;
-  background-image: url("../img/order/radio.png");
-  outline: none;
+.form__cursor{
+  display: none;
+}
+
+.form__radio-fake{
+  height: rem(16px);
+  width: rem(16px);
+  background-color: white;
+  border-radius: 50%;
+  margin-right: rem(8px);
+  position: relative;
+}
+
+.form__radio-fake:before{
+  content: "";
+  display: block;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.form__cursor:checked + .form__radio-fake:before{
+  height: rem(7px);
+  width: rem(7px);
+  background: #e35028;
+  transition: 0.3s;
 }
 
 .form__checkbox{
-  height: 15px;
-  width: 15px;
+  display: none;
 }
 
-[type="checkbox"]:checked{
-  width: 15px;
-  height: 15px;
-  outline:none;
-  -webkit-appearance: none;
-  background-image: url("../img/order/checkbox.png");
+.form__checkbox-fake{
+  height: rem(16px);
+  width: rem(16px);
+  background-color: white;
+  border-radius: 2%;
+  margin-right: 8px;
+  position: relative;
 }
+
+.form__checkbox-fake:before{
+  content: "";
+  display: block;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  background: url("../../img/order/checkbox.png") center center no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.form__checkbox:checked + .form__checkbox-fake:before{
+  height: rem(12px);
+  width: rem(12px);
+  transition: 0.2s;
+}
+
+
 
 .form__input{
   border:initial;
-  padding: 10px 20px;
+  padding: rem(10px) rem(20px);
   background: white;
-  border-radius: 5px;
+  border-radius: rem(5px);
   width:100%;
   outline: none;
 }
@@ -110,12 +158,12 @@
 }
 
 .form__input_textarea{
-  height: 110px;
+  height: rem(110px);
   resize: none;
 }
 
 .form__text{
-  margin-left: 10px;
+  margin-left: rem(10px);
 }
 
 .button_form{
@@ -126,8 +174,8 @@
   background: transparent;
   border: none;
   outline: none;
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: 'ubuntulight';
   color: white;
-  margin-left: 20px;
+  margin-left: rem(20px);
 }

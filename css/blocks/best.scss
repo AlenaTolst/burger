@@ -29,26 +29,22 @@
 
 .best__image{
   display: block;
-  width: rem(100px);
-  height: rem(100px);
+  width: 100px;
+  height: 100px;
   margin-bottom: rem(40px);
   @include phones{
     margin-bottom: 0;
+    flex: 1;
   }
 }
 
-// .best__pic{
-//   @include phones{
-//     height: 93px;
-//     width: 93px;
-//   }
-// }
 
 .best__text{
   text-align: center;
   @include phones{
     margin-left: rem(25px);
     text-align: start;
+    flex: 4;
   }
 }
 

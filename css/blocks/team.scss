@@ -51,9 +51,20 @@
     transition:.4s;
 
     @include tablets{
+      border-top: rem(9px) solid $yellow;
+      border-left: rem(7px) solid transparent;
+      border-right: rem(7px) solid transparent;
       left: 0px;
+      bottom: rem(8px);
     }
   }
+
+  @include tablets{
+    font-size: rem(24px);
+    padding-left: rem(25px);
+  }
+
+
 }
 
 .team-acco{
@@ -88,11 +99,10 @@
   .team-acco__content{
     display: flex;
     align-items: center;
-    margin: rem(10px) rem(35px) rem(30px) rem(25px);
+    margin: rem(10px) rem(25px) rem(30px) rem(25px);
 
     @include tablets{
       flex-direction: column;
-      // margin: rem(10px) rem(40px) rem(30px) rem(40px);
     }
   }
 }
@@ -113,7 +123,7 @@
 }
 
 .team-acco__text{
-  font-size: rem(14px);
+  font-size: 14px;
   color: white;
   margin-left: rem(20px);
 
@@ -132,13 +142,4 @@
   font-family: 'ubuntulight';
   line-height: rem(24px);
 
-  @include tablets{
-    // margin-left: rem(161px);
-    // margin-right: rem(161px);
-  }
-
-  @include phones{
-    margin-left: rem(80px);
-    margin-right: rem(80px);
-  }
 }

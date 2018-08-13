@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <!-- class="locked" -->
   <div class="wrapper">
     <section class="section section-hero">
       <div class="container container_hero">
@@ -45,12 +46,12 @@
                 </li>
               </ul>
             </nav>
-            <a href="#" class="button">Заказать</a>
+            <a href="#" class="button button-hero">Заказать</a>
           </div>
         </header>
         <div class="hero__main-content">
           <div class="hero__picture">
-            <img src="./img/hero/hero-burger.png" alt="burger">
+            <img src="./img/hero/hero-burger.png" alt="burger" class="hero__picture-burger">
           </div>
           <div class="hero__text">
             <h2 class="title title_yellow title_hero">Мы делаем</h2>
@@ -62,7 +63,9 @@
         </div>
         <div class="scroll">
           <a href="#" class="scroll__link">
-            <img src="./img/hero/hero-arrow-scroll.png" class="scroll__button" alt="scroll">
+            <svg class="scroll__button">
+              <use xlink:href="./css/styles/sprite.svg#scroll"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -102,6 +105,108 @@
         </ul>
       </div>
     </section>
+    <section class="section section-burgers">
+      <div class="container">
+        <div class="slider">
+          <a href="#" class="slider__button slider__button-left">
+            <svg class="scroll__button slider__btn-pic-left">
+              <use xlink:href="./css/styles/sprite.svg#scroll"></use>
+            </svg>
+          </a>
+          <ul class="slider__list">
+            <li class="slider__item">
+              <div class="ingredients">
+                <div class="ingredients__icon">
+                  <svg class="ingredients__pic">
+                    <use xlink:href="./css/styles/sprite.svg#burger"></use>
+                  </svg>
+                  <div class="ingredients__text">СОСТАВ</div>
+                </div>
+                <div class="ingredients__dropdown">
+                  <!-- dropdown-is-active -->
+                  <ul class="ingredients__dropdown-list">
+                    <li class="ingredients__dropdown-item">
+                      <svg class="ingredients__dropdown-pic">
+                        <use xlink:href="./css/styles/sprite.svg#beef"></use>
+                      </svg>
+                      <div class="ingredients__dropdown-name">Говядина</div>
+                      <div class="ingredients__dropdown-weight">300г</div>
+                    </li>
+                    <li class="ingredients__dropdown-item">
+                      <svg class="ingredients__dropdown-pic">
+                        <use xlink:href="./css/styles/sprite.svg#buns"></use>
+                      </svg>
+                      <div class="ingredients__dropdown-name">Булочки</div>
+                      <div class="ingredients__dropdown-weight">100г</div>
+                    </li>
+                    <li class="ingredients__dropdown-item">
+                      <svg class="ingredients__dropdown-pic">
+                        <use xlink:href="./css/styles/sprite.svg#salad"></use>
+                      </svg>
+                      <div class="ingredients__dropdown-name">Зелень</div>
+                      <div class="ingredients__dropdown-weight">70г</div>
+                    </li>
+                    <li class="ingredients__dropdown-item">
+                      <svg class="ingredients__dropdown-pic">
+                        <use xlink:href="./css/styles/sprite.svg#sauce"></use>
+                      </svg>
+                      <div class="ingredients__dropdown-name">Соус</div>
+                      <div class="ingredients__dropdown-weight">150г</div>
+                    </li>
+                    <li class="ingredients__dropdown-item">
+                      <svg class="ingredients__dropdown-pic">
+                        <use xlink:href="./css/styles/sprite.svg#cucumber"></use>
+                      </svg>
+                      <div class="ingredients__dropdown-name">Овощи</div>
+                      <div class="ingredients__dropdown-weight">200г</div>
+                    </li>
+                    <li class="ingredients__dropdown-item">
+                      <svg class="ingredients__dropdown-pic">
+                        <use xlink:href="./css/styles/sprite.svg#cheese"></use>
+                      </svg>
+                      <div class="ingredients__dropdown-name">Сыр</div>
+                      <div class="ingredients__dropdown-weight">50г</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="weight">
+                <div class="weight__content">
+                  <svg class="weight__pic">
+                    <use xlink:href="./css/styles/sprite.svg#kkal"></use>
+                  </svg>
+                  <div class="weight__info">
+                    <div class="weight__kkal-num">1200</div>
+                    <div class="weight__kkal">ККАЛ</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__left">
+                <img src="./img/burgers/black-burger.png" alt="black-burger" class="slider__pic">
+              </div>
+              <div class="slider__right">
+                <div class="title title_white title_burger">DARK BEEF BURGER</div>
+                <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь,
+                  двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                <div class="slider__info">
+                  <div class="slider__price">
+                    <div class="slider__price-sum">500</div>
+                    <div class="slider__price-rub">рублей</div>
+                  </div>
+                  <div class="button button_burgers">ЗАКАЗАТЬ</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="slider__button slider__button-right">
+            <svg class="scroll__button slider__btn-pic-right">
+              <use xlink:href="./css/styles/sprite.svg#scroll"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-team">
       <div class="team__content">
         <div class="title title_team title_yellow">Команда</div>
@@ -334,28 +439,31 @@
               </label>
             </div>
             <div class="form__item-mobile">
-            <div class="form__item form__item_mobile-center">
-              <label class="form__block form__block_oneline form__block_radio">
-                <input type="radio" name="showname" class="form__cursor" checked>
-                <div class="form__text">Потребуется сдача</div>
-              </label>
-              <label class="form__block form__block_oneline form__block_radio">
-                <input type="radio" name="showname" class="form__cursor">
-                <div class="form__text">Оплата по карте</div>
-              </label>
-            </div>
-            <div class="form__item form__item_mobile-center">
-              <label class="form__block form__block_oneline">
-                <input type="checkbox" class="form__checkbox">
-                <div class="form__text">Не перезванивать</div>
-              </label>
-            </div>
-            <div class="form__item form__item_mobile-center">
-              <div class="form__block form__block_oneline">
-                <a href="#" class="button button_form">ЗАКАЗАТЬ</a>
-                <button type="reset" class="button-reset">Очистить</button>
+              <div class="form__item form__item_mobile-center">
+                <label class="form__block form__block_oneline form__block_radio">
+                  <input type="radio" name="showname" class="form__cursor" checked>
+                  <div class="form__radio-fake"></div>
+                  <div class="form__text">Потребуется сдача</div>
+                </label>
+                <label class="form__block form__block_oneline form__block_radio">
+                  <input type="radio" name="showname" class="form__cursor">
+                  <div class="form__radio-fake"></div>
+                  <div class="form__text">Оплата по карте</div>
+                </label>
               </div>
-            </div>
+              <div class="form__item form__item_mobile-center">
+                <label class="form__block form__block_oneline">
+                  <input type="checkbox" class="form__checkbox">
+                  <div class="form__checkbox-fake"></div>
+                  <div class="form__text">Не перезванивать</div>
+                </label>
+              </div>
+              <div class="form__item form__item_mobile-center">
+                <div class="form__block form__block_oneline">
+                  <a href="#" class="button button_form">ЗАКАЗАТЬ</a>
+                  <button type="reset" class="button-reset">Очистить</button>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -379,22 +487,30 @@
                 <ul class="socials__list">
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <img src="./img/map/vk.svg" alt="vk" class="socials__link-picture">
+                      <svg class="socials__link-picture">
+                        <use xlink:href="./css/styles/sprite.svg#vk"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <img src="./img/map/fb.svg" alt="fb" class="socials__link-picture">
+                      <svg class="socials__link-picture">
+                        <use xlink:href="./css/styles/sprite.svg#fb"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <img src="./img/map/inst.svg" alt="inst" class="socials__link-picture">
+                      <svg class="socials__link-picture">
+                        <use xlink:href="./css/styles/sprite.svg#insta"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="socials__item">
                     <a href="#" class="socials__link">
-                      <img src="./img/map/twitter.svg" alt="tw" class="socials__link-picture">
+                      <svg class="socials__link-picture">
+                        <use xlink:href="./css/styles/sprite.svg#tw"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -407,11 +523,40 @@
     </div>
   </div>
   </div>
+  <div class="burger-menu-open">
+    <!-- is-active -->
+    <div class="burger-menu-open__pieces"></div>
+  </div>
 
+  <div class="burger-menu">
+    <!-- is-active -->
+    <div class="burger-menu__content">
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">О НАС</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">БУРГЕРЫ</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">КОМАНДА</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">МЕНЮ</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">ОТЗЫВЫ</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">КОНТАКТЫ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <ul class="sidebar">
     <li class="sidebar__item">
-      <a href="#" cl™™ass="sidebar__link sidebar__link_activ"></a>
+      <a href="#" class="sidebar__link sidebar__link_activ"></a>
     </li>
     <li class="sidebar__item">
       <a href="#" class="sidebar__link"></a>
@@ -438,6 +583,7 @@
       <a href="#" class="sidebar__link"></a>
     </li>
   </ul>
+  <script src="./js/burger-menu.js"></script>
 </body>
 
 </html>

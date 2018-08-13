@@ -62,7 +62,7 @@
 }
 
 .socials__item{
-  margin-left: rem(20px);
+  margin-left: rem(15px);
 
   &:first-child{
     margin-left: 0px;
@@ -73,12 +73,21 @@
   display: block;
   height: rem(21px);
   width: rem(21px);
+  cursor: pointer;
+
+  &:hover{
+    .socials__link-picture{
+      fill: white;
+      transition: 0.5s;
+    }
+  }
 }
+
 
 .socials__link-picture{
   fill: #5a5a5a;
-  height: rem(21px);
-  width: rem(21px);
+  height: rem(18px);
+  width: rem(18px);
 }
 
 .footer__phone{

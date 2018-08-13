@@ -11,7 +11,7 @@ $phones: 480px;
 @import "styles/fonts.scss";
 @import "styles/layout.scss";
 
-
+@import "blocks/burger-menu.scss";
 @import "blocks/hero.scss";
 @import "blocks/best.scss";
 @import "blocks/reviews.scss";
@@ -20,3 +20,4 @@ $phones: 480px;
 @import "blocks/map.scss";
 @import "blocks/team.scss";
 @import "blocks/menu.scss";
+@import "blocks/burgers.scss";
