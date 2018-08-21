@@ -1,0 +1,99 @@
+.section-map{
+  background: url("../img/map/map.jpg") center center no-repeat;
+  background-size: cover;
+  
+}
+
+.map{
+  height: 100vh;
+  position: relative;
+}
+
+.container_footer{
+  min-height: rem(70px);
+  height: 7vh;
+}
+
+.footer{
+  position: absolute;
+  background: black;
+  min-height: rem(70px);
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  font-family: 'ubuntulight';
+  color: white;
+  font-size: rem(14px);
+}
+
+.footer__content{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones{
+   flex-direction: column;
+   justify-content: center;
+  }
+}
+
+.footer__info{
+  line-height: rem(24px);
+}
+
+.footer__phone-link{
+  display: flex;
+  align-items: center;
+
+  @include phones{
+    justify-content:center;
+  }
+}
+
+.phone{
+  height: rem(12px);
+  width: rem(12px);
+  fill: #e45028;
+}
+
+.socials__list{
+  display: flex;
+}
+
+.socials__item{
+  margin-left: rem(15px);
+
+  &:first-child{
+    margin-left: 0px;
+  }
+}
+
+.socials__link{
+  display: block;
+  height: rem(21px);
+  width: rem(21px);
+  cursor: pointer;
+
+  &:hover{
+    .socials__link-picture{
+      fill: white;
+      transition: 0.5s;
+    }
+  }
+}
+
+
+.socials__link-picture{
+  fill: #5a5a5a;
+  height: rem(18px);
+  width: rem(18px);
+}
+
+.footer__phone{
+  color: #e45028;
+  font-family: 'ubuntubold';
+  text-decoration: none;
+  margin-left: rem(8px);
+}
+

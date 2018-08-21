@@ -2,11 +2,24 @@ $black: #2f3234;
 $red: #e35028;
 $yellow: #f9b43b;
 
+$tablets: 768px;
+$phones: 480px;
+
+
+@import "styles/media.scss";
 @import "./styles/normalize.scss";
 @import "styles/fonts.scss";
 @import "styles/layout.scss";
 
+@import "blocks/modal-order.scss";
+@import "blocks/modal-review.scss";
+@import "blocks/burger-menu.scss";
 @import "blocks/hero.scss";
 @import "blocks/best.scss";
 @import "blocks/reviews.scss";
 @import "blocks/sidebar.scss";
+@import "blocks/order.scss";
+@import "blocks/map.scss";
+@import "blocks/team.scss";
+@import "blocks/menu.scss";
+@import "blocks/burgers.scss";

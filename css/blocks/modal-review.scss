@@ -1,0 +1,52 @@
+.modal-review__inside{
+  position: relative;
+  border-radius: 5px;
+  background: white;
+  padding: rem(25px) rem(20px);
+  width: 460px;
+}
+
+.modal-review{
+  position: fixed;
+  z-index: 1;
+  background: rgba(47, 50, 52, 0.95);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  transition: opacity 0.3s;
+  left: -99999px;
+  right: 0;
+
+}
+
+.modal-review.is-active {
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  height: 100vh;
+}
+
+.modal-review__close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal-reviews__title{
+  font-family: 'gagalinregular';
+  margin-bottom: rem(20px);
+
+  @include phones{
+    font-size: 24px;
+    text-align: center;
+   }
+}
+
+.modal-reviews__text{
+  font-family: 'ubuntulight';
+  line-height: rem(25px);
+  margin-bottom: rem(20px);
+}

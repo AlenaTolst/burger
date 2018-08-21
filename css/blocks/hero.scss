@@ -10,15 +10,26 @@ background-size: cover; //всегда заливать блок бэкграу�
 }
 
 .header{
-  height: 90px;
-  margin: 10px 0;
+  height: rem(90px);
+  margin: rem(10px) 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.logo__picture{
+  width: rem(92px);
+  height: rem(69px);
+}
+
 .nav{
-  margin-right: 20px;
+  margin-right: rem(20px);
+  flex:1;
+
+ 
+  @include tablets{
+    display:none;
+  }
 }
 
 .nav__list{
@@ -29,7 +40,7 @@ background-size: cover; //всегда заливать блок бэкграу�
 .nav__item{
   display: flex;
   align-items: center;
-  margin-left:10px;
+  margin-left:rem(10px);
 
   &:first-child{
     &::before{
@@ -40,11 +51,11 @@ background-size: cover; //всегда заливать блок бэкграу�
   &:before{
     content: "";
     display: block;
-    width: 4px;
-    height: 4px;
+    width: rem(4px);
+    height: rem(4px);
     background: white;
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 0 rem(10px);
   }
 }
 
@@ -57,31 +68,98 @@ background-size: cover; //всегда заливать блок бэкграу�
 display: flex;
 align-items: center;
 text-transform: uppercase;
-font-size: 13px;
+font-size: rem(13px);
+}
+
+
+.button-hero{
+  @include tablets{
+    margin-right: rem(86px);
+  }
+}
+.burger-menu__line{
+  width: 24px;
+  height: 4px;
+  border-radius: 3px;
+  background: white;
+  margin-bottom: 5px;
+  margin-left: rem(30px);
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.hero__picture{
+  // height: 424px;
+  // width: 475px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: rem(70px);
+  display: flex;
+  justify-content: center;
+
+  @include tablets{
+    margin-bottom: rem(40px);
+  }
+}
+
+.hero__picture-burger{
+  height: 100%;
+  width: 100%;
+
+  @include phones{
+    width: 80%;
+    height: 80%;
+  }
+
+}
+
+.burger-menu-link{
+  height: rem(22px);
 }
 
 .hero__text{
-  margin-left: 12px;
-  padding-top: 80px;
+  margin-left: rem(12px);
+  // padding-top: rem(80px);
+
+  @include tablets{
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 .hero__main-content{
   display: flex;
   align-items: center;
+  height: 100%;
+
+   
+  @include tablets{
+    flex-direction: column;
+  }
+}
+
+.title_hero{
+  margin-bottom:rem(5px);
 }
 
 .hero__text-inside{
-  font-size: 65px;
+  font-size: rem(65px);
   font-family: 'lifehackmedium';
   color: white;
-  line-height: 70px;
+  line-height: rem(70px);
+
+  @include phones{
+    font-size: rem(50px);
+  }
 }
 
 .scroll{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 55px;
+  height: rem(55px);
 }
 
 

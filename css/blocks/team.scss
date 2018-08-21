@@ -1,0 +1,148 @@
+.section-team{
+  background: url("../img/team/team-background.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.team__content{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  padding: 5% 7% 0 5%;
+
+  @include tablets{
+    margin-left: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10% 0 10%;
+  }
+}
+
+.title-team{
+  margin-bottom: rem(50px);
+}
+
+.team-acco__link{
+  color: white;
+  font-family: 'gagalinregular';
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
+  padding-left: rem(20px);
+
+  &:before{
+    display: block;
+    content:"";
+    border-top: rem(7px) solid $yellow;
+    border-left: rem(5px) solid transparent;
+    border-right: rem(5px) solid transparent;
+    border-bottom: 0px solid transparent;
+    width: 0px;
+    position: absolute;
+    bottom: rem(4px);
+    transform: rotate(0deg);
+    transition:.4s;
+
+    @include tablets{
+      border-top: rem(9px) solid $yellow;
+      border-left: rem(7px) solid transparent;
+      border-right: rem(7px) solid transparent;
+      left: 0px;
+      bottom: rem(8px);
+    }
+  }
+
+  @include tablets{
+    font-size: rem(24px);
+    padding-left: rem(25px);
+  }
+
+
+}
+
+.team-acco{
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team-acco__item{
+  margin-bottom: rem(35px);
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:first-child{
+      margin-bottom: 0;
+    }
+  }
+  
+}
+
+.team-acco__item.is-active{
+  .team-acco__link{
+    color: $yellow;
+    &:before{
+      transform: rotate(-180deg);
+    }
+  }
+
+  .team-acco__content{
+    display: flex;
+    align-items: center;
+    margin: rem(10px) rem(25px) rem(30px) rem(25px);
+
+    @include tablets{
+      flex-direction: column;
+    }
+  }
+}
+
+.team-acco__content{
+  display: none;
+  // height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.team-acco__img{
+  height: rem(100px);
+  width: rem(100px);
+  border-radius: 50%;
+  background-position: center center;
+
+  @include tablets{
+    margin-bottom: 20px;
+  }
+}
+
+.team-acco__text{
+  font-size: 14px;
+  color: white;
+  margin-left: rem(20px);
+
+  @include tablets{
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.team-acco__title{
+  font-family: 'ubuntubold';
+  margin-bottom: rem(20px);
+}
+
+.team-acco__text-content{
+  font-family: 'ubuntulight';
+  line-height: rem(24px);
+
+}
