@@ -1,36 +1,36 @@
 @font-face {
   font-family: 'gagalinregular';
-  src: url("../../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../../fonts/gagalin-regular-webfont.woff") format("woff");
+  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'lifehackmedium';
-  src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
+  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntubold';
-  src: url("../../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-b-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntulight';
-  src: url("../../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-light-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../fonts/ubuntu-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntumedium';
-  src: url("../../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-medium-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../fonts/ubuntu-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubunturegular';
-  src: url("../../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-regular-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -63,6 +63,7 @@ h1, h2, h3, h4 {
 .container {
   margin: 0 auto;
   width: 940px;
+  min-width: 320px;
   min-height: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,12 +77,10 @@ h1, h2, h3, h4 {
   justify-content: center;
   height: 100vh; }
 
-.container_fullscreen {
-  width: 100%; }
-
 .title {
   font-family: 'gagalinregular';
   font-size: 72px;
+  font-weight: 300;
   color: black;
   margin-bottom: 45px; }
   .title_yellow {
@@ -99,7 +98,7 @@ h1, h2, h3, h4 {
   text-align: center; }
 
 .section-hero {
-  background: url("../../img/hero/hero-background.jpg") center center no-repeat;
+  background: url("../img/hero/hero-background.jpg") center center no-repeat;
   background-size: cover; }
 
 .container_hero {
@@ -202,7 +201,7 @@ h1, h2, h3, h4 {
   height: 55px; }
 
 .section-best {
-  background: url(../../img/best/best.jpg) center center no-repeat;
+  background: url("../img/best/best.jpg") center center no-repeat;
   background-size: cover; }
 
 .best__list {
@@ -257,7 +256,8 @@ h1, h2, h3, h4 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-size: 14px; }
+  font-size: 14px;
+  height: 100vh; }
 
 .reviews__item {
   height: 50%;
@@ -289,16 +289,19 @@ h1, h2, h3, h4 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%; }
 
 .reviews__title {
-  font-family: 'gagalinregular'; }
+  font-family: 'gagalinregular';
+  margin-bottom: 20px; }
 
 .reviews__text {
   font-family: 'ubuntulight';
-  line-height: 25px; }
+  line-height: 25px;
+  margin-bottom: 20px; }
 
 .button_reviews {
   width: 90px;
@@ -306,7 +309,8 @@ h1, h2, h3, h4 {
   background: #2f3234;
   text-transform: uppercase;
   font-size: 13px;
-  font-family: 'ubuntumedium'; }
+  font-family: 'ubuntumedium';
+  cursor: pointer; }
 
 .sidebar {
   position: fixed;
@@ -332,6 +336,7 @@ h1, h2, h3, h4 {
 .sidebar__link {
   height: 6px;
   width: 6px;
+  display: block;
   background-color: white;
   border-radius: 50%;
   position: relative; }
@@ -350,7 +355,7 @@ h1, h2, h3, h4 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.sidebar__link:hover:before {
+.sidebar__link:hover:before, .sidebar__link_activ:before {
   border: 1px solid white; }
 
 /*# sourceMappingURL=main.css.map */
