@@ -11,6 +11,8 @@ $phones: 480px;
 @import "styles/fonts.scss";
 @import "styles/layout.scss";
 
+@import "blocks/modal-order.scss";
+@import "blocks/modal-review.scss";
 @import "blocks/burger-menu.scss";
 @import "blocks/hero.scss";
 @import "blocks/best.scss";

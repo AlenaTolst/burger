@@ -5,11 +5,13 @@
 
 .slider{
   position: relative;
- 
 
   &__item{
     position: relative;
     display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
 
     @include tablets{
       flex-direction: column;
@@ -57,15 +59,30 @@
   cursor: pointer;
 }
 
+.slider-container{
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider__list{
+  display: flex;
+  width: 500%;
+}
+
 .ingredients{
   position: absolute;
-  top: -10px;
+  top: 20%;
   display: flex;
 
 
   @include tablets{
-    top: rem(-70px);
+    top: 5%;
     left: 0;
+  }
+
+  @include phones{
+    // top: -48px;
   }
 
 }
@@ -127,7 +144,7 @@
 
 .weight{
   position: absolute;
-  bottom: -20px;
+  bottom: 20%;
   font-family: 'gagalinregular';
   color: #f9d19d;
 
@@ -141,8 +158,12 @@
   }
 
   @include tablets{
-    top: rem(-65px);
+    top: 6%;
     right: 0;
+  }
+
+  @include phones{
+    // top: -45px;
   }
 
 }
@@ -207,9 +228,8 @@
   line-height: rem(64px);
 
   @include phones{
-    margin: 0 20px 30px 20px;
+    margin: 0 20px 20px 20px;
     line-height: rem(52px);
-
   }
 }
 

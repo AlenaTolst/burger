@@ -109,6 +109,9 @@
 
 .team-acco__content{
   display: none;
+  // height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
 }
 
 .team-acco__img{

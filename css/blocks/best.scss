@@ -3,6 +3,12 @@
   background-size: cover;
 }
 
+.title_best{
+  @include phones{
+    margin-bottom: rem(20px);
+  }
+}
+
 .best__list{
   display: flex;
   align-items: flex-start;
@@ -23,7 +29,7 @@
 
   @include phones{
     flex-direction: row;
-    margin-bottom: rem(40px);
+    margin-bottom: rem(20px);
   }
 }
 
@@ -52,6 +58,10 @@
   font-size: rem(24px);
   font-family: 'lifehackmedium';
   margin-bottom: rem(25px);
+
+  @include phones{
+    margin-bottom: rem(10px);
+  }
 }
 
 .best__inside{

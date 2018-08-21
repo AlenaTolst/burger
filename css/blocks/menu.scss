@@ -10,15 +10,13 @@
   top: 10%;
   left: 10%;
 
-  @include tablets{
-    display: none;
-  }
 }
 
 .menu-acco {
   display: flex;
   justify-content: flex-end;
   height: 100%;
+
 }
 
 .menu-acco__item {
@@ -34,7 +32,7 @@
 }
 
 .menu-acco__trigger {
-  width: rem(80px);
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,13 +43,10 @@
   text-decoration: none;
   box-shadow:0 0 0 128px rgba(0, 0, 0, 0.7) inset;
 
-  @include tablets{
-    width: rem(85px);
+  @include phones{
+    width: rem(40px);
   }
 
-  @include phones{
-    display: none;
-  }
 }
 
 .menu-acco__trigger_right{
@@ -76,31 +71,29 @@
   .menu-acco__trigger{
     @include phones{
       display: flex;
-      width: 16%;
       }
 
   }
   .menu-acco__content{
-    display: block;
-    width: 540px;
     background: rgba(47, 50, 52, 0.93);
     overflow: hidden;
-
-    @include phones{
-      width: 84%;
-    }
-
+    transition: width 0.5s;
   }
 
   .menu-acco__text{
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 60px;
+
+    @include phones{
+      margin: 15px;
+    }
   }
 }
 
 .menu-acco__content {
-  display: none;
+  width: 0;
+  overflow: hidden;
   color: white;
   font-family: 'ubuntulight';
   font-size: rem(14px);
@@ -111,11 +104,11 @@
 .close-mobile{
   display: none;
 
-  @include phones{
-    display: block;
-  position: absolute;
-  top: rem(28px);
-  right: rem(20px);
-  }
+  // @include phones{
+  // display: block;
+  // position: absolute;
+  // top: rem(28px);
+  // right: rem(20px);
+  // }
 
 }

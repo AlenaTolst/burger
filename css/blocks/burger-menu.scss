@@ -52,7 +52,8 @@
 }
 
 .burger-menu {
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   background: rgba(47, 50, 52, 0.95);
   align-items: center;
   justify-content: center;
@@ -95,6 +96,13 @@
       border-radius: 50%;
       background: white;
       margin: rem(25px) auto;
+    }
+
+  }
+
+  .burger-menu__item{
+    &:last-child::after{
+      display: none;
     }
   }
 

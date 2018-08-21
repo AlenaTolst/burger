@@ -21,7 +21,8 @@
   margin-bottom: rem(55px);
 
   @include phones{
-    margin-block-end: rem(30px);
+    margin-bottom: rem(10px);
+    font-size: rem(40px);
   }
 }
 
@@ -96,8 +97,8 @@
 }
 
 .form__cursor:checked + .form__radio-fake:before{
-  height: rem(7px);
-  width: rem(7px);
+  height: rem(8px);
+  width: rem(8px);
   background: #e35028;
   transition: 0.3s;
 }
