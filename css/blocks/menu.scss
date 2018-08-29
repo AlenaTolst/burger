@@ -9,7 +9,6 @@
   position: absolute;
   top: 10%;
   left: 10%;
-
 }
 
 .menu-acco {
@@ -75,8 +74,8 @@
 
   }
   .menu-acco__content{
-    background: rgba(47, 50, 52, 0.93);
-    overflow: hidden;
+    // background: rgba(47, 50, 52, 0.93);
+    // overflow: hidden;
     transition: width 0.5s;
   }
 
@@ -99,6 +98,9 @@
   font-size: rem(14px);
   line-height: rem(24px);
   position: relative;
+  background: rgba(47, 50, 52, 0.93);
+  overflow: hidden;
+  transition: width 0.5s;
 }
 
 .close-mobile{

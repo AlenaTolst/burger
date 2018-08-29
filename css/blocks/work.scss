@@ -1,0 +1,86 @@
+.work-section {
+  background: url(../img/work/work.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.container_work{
+  align-items: center;
+}
+
+.video__player {
+  position: relative;
+  width: rem(660px);
+
+  @include phones{
+    width: 420px;
+  }
+}
+
+#player{
+  width: rem(660px);
+  height: rem(405px);
+  @include phones{
+    width: 420px;
+  }
+}
+
+.video__player-img{
+  display: block;
+  position: absolute;
+  width: 10%;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.video__player-img--active{
+  display: none;
+}
+
+.video__toolbar{
+  width: rem(660px);
+  height: 35px;
+  background-color: #3e3e3e;
+  display: flex;
+  margin-top: -22px;
+  @include phones{
+    width: 420px;
+    margin-top: -65px;
+  }
+}
+
+.duration{
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.duration__img{
+  padding: 0 5%;
+  cursor: pointer;
+}
+
+.duration__length{
+  width: 80%;
+  background-color: #626262;
+}
+
+.sound{
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  width: 40%
+}
+
+.sound__mic{
+  cursor: pointer;
+}
+
+.sound__volume{
+  margin-left: 20%;
+}
+
+.duration__length_other{
+  width: rem(60px);
+}

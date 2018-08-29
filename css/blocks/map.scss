@@ -1,8 +1,8 @@
-.section-map{
-  background: url("../img/map/map.jpg") center center no-repeat;
-  background-size: cover;
+// .section-map{
+//   background: url("../img/map/map.jpg") center center no-repeat;
+//   background-size: cover;
   
-}
+// }
 
 .map{
   height: 100vh;
@@ -24,6 +24,7 @@
   font-family: 'ubuntulight';
   color: white;
   font-size: rem(14px);
+  z-index: 1;
 }
 
 .footer__content{

@@ -17,6 +17,7 @@ body{
   color: $black;
   position: relative;
   margin: 0;
+  height: 100vh;
 }
 
 ul{
@@ -36,10 +37,19 @@ h1,h2,h3,h4{
 .wrapper{
   position: relative; //position absolute внути позиционировался относительно враппера
   width: 100%; 
-  min-height: 100%; //растянут на всю высоту окна
+  height: 100%; //растянут на всю высоту окна
   overflow: hidden; //нет скрола при избытке содеожимого 
 }
 
+.maincontent{
+  height: 100%;
+  // transform: translateY(-50%);
+  transition: transform 0.5s;
+}
+
+// .section{
+//   height: 100%;
+// }
 .container{
   margin: 0 auto; //всегда по центру независимо от ширины
   width: 95%;
